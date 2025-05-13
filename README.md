@@ -21,17 +21,11 @@ The **Youtube Media Downloader** is the ultimate solution for downloading audio,
    pip install -r requirements.txt
    ```
 
-3. (Optional) If the project uses a frontend, ensure you install JavaScript dependencies:
-   ```bash
-   cd frontend
-   npm install
-   ```
-
 ## Usage
 
 1. **Run the application**:
    ```bash
-   python main.py
+   python yt.py
    ```
 
 2. **Access the interface**:
