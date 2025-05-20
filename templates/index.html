@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Downloader</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Downloader + Transcript</h1>
+        
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="message message-{{ category }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <form method="POST" action="/">
+            <div>
+                <label for="url">YouTube URL</label>
+                <input type="url" id="url" name="url" required 
+                       placeholder="https://youtube.com/watch?v=...">
+            </div>
+
+            <div>
+                <label for="mode">Download Mode</label>
+                <select id="mode" name="mode">
+                    <option value="video">Video</option>
+                    <option value="audio">Audio</option>
+                    <option value="transcript">Transcript</option>
+                </select>
+            </div>
+
+            <button type="submit">Download</button>
+        </form>
+    </div>
+</body>
+</html>
