@@ -1,1 +1,70 @@
+/* Main container styling */
+.stApp {
+    background-image: linear-gradient(to bottom right, #0E1117, #1E1E2D);
+}
 
+/* Header styling */
+.st-emotion-cache-1avcm0n {
+    background-color: rgba(14, 17, 23, 0.9) !important;
+}
+
+/* Button styling */
+.st-emotion-cache-7ym5gk {
+    background-color: #FF4B4B !important;
+    border: none !important;
+    transition: all 0.3s ease;
+}
+
+.st-emotion-cache-7ym5gk:hover {
+    background-color: #FF6B6B !important;
+    transform: translateY(-2px);
+}
+
+/* Input field styling */
+.stTextInput input, .stTextArea textarea {
+    background-color: #262730 !important;
+    color: white !important;
+    border: 1px solid #444 !important;
+}
+
+/* Radio button styling */
+.stRadio > div {
+    display: flex;
+    gap: 10px;
+}
+
+.stRadio > div > label {
+    background-color: #262730 !important;
+    padding: 10px 15px !important;
+    border-radius: 8px !important;
+    border: 1px solid #444 !important;
+    transition: all 0.3s ease;
+}
+
+.stRadio > div > label:hover {
+    background-color: #333344 !important;
+}
+
+.stRadio > div > label[data-baseweb="radio"] {
+    background-color: #FF4B4B !important;
+}
+
+/* Progress bar styling */
+.st-emotion-cache-1m7p7oq {
+    background-color: #444 !important;
+}
+
+.st-emotion-cache-zt5igj {
+    background-color: #FF4B4B !important;
+}
+
+/* Download button styling */
+.stDownloadButton button {
+    background-color: #4CAF50 !important;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.stDownloadButton button:hover {
+    background-color: #45a049 !important;
+}
